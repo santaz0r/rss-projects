@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+@import '../../../main/css/scss/abstracts/variables';
+@import '../../../main/css/scss/abstracts/button';
+
+@import 'normalize';
+@import '../../../main/css/scss/header';
+@import 'promo';
+@import 'donate';
+@import '../../../main/css/scss/footer';
+

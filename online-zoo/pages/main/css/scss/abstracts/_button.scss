@@ -1,0 +1,17 @@
+.btn {
+    width: 298px;
+    height: 54px;
+    background: $color_btns;
+    display: block;
+    border: none;
+    border-radius: 25px;
+    color: $color_white;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+        background-color: $color_btn_hover;
+    }
+    &:focus {
+        background-color: $color_green;
+    }
+}

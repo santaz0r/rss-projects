@@ -1,0 +1,186 @@
+.footer {
+    min-height: 443px;
+    background-color: $footer_bg_color;
+    padding: 41px 0 50px 0;
+    &__wrapper {
+        display: flex;
+
+    }
+    &__socials {
+        display: flex;
+        flex-direction: column;
+        &-btn {
+            margin-top: 68px;
+            border-radius: 5px;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 60px auto 0;
+            padding: 16px 0;
+            color:$color_white;
+            text-decoration: none; 
+            
+        }
+        
+        &-item {
+           display: flex;
+           justify-content: flex-start;
+           align-items: center;
+           margin-bottom: 10px;
+           
+           
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &-links {
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+
+        }
+        &-link {
+           
+            
+            img {
+                width: 26px;
+                height: 26px;
+                border-radius: 40%;
+                background-color: #C4C4C480;
+                padding:5px;
+                
+                margin-right: 12px;
+                
+            }
+            a {
+                
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                color: $color_white; 
+                
+                &:hover {
+                    img{
+                        background-color: $color_green;
+
+                    }
+                        color:$color_green;
+                }
+            }
+            
+            
+            
+        }
+        
+    }
+    &__menu{
+        display: flex;
+        padding: 0;
+        list-style-type: none;
+        align-items: flex-end;
+        
+        margin: 0 0 0 101px;
+        &-link{
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: $color_white;
+            &-active{
+                color: $color_orange;
+            }
+            &:not(first-child):hover {
+                color: $color_orange;
+            }
+        }
+        &-item{
+            
+            margin-right: 58px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+
+    }
+    &__about {
+        margin-left: 32px;
+        &-title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: $color_white;
+
+        }
+        &-input {
+            display: flex;
+            margin-top: 14px;
+            
+            
+            input {
+                width: 228px;
+                height: 42px;
+                margin-right: 10px;
+                border: 1px solid $color_orange;
+                border-radius: 2px;
+                background: $footer_bg_color;
+                padding-left: 10px;
+                outline: none;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                color: #BDBDBD;
+                &:invalid + button {
+                    
+                    border: 1px solid $color_btn_mistaken;
+                    color: $color_btn_mistaken;
+                    
+                }
+                &::placeholder {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #BDBDBD;
+                    
+                }
+                
+                &:valid {
+                    border: 1px solid $color_green;
+                }
+                
+            }
+        }
+        &-btn {
+            width: 129px;
+            height: 42px;
+            background: #F1F3F2;
+            border: 1px solid $color_green;
+            border-radius: 5px;
+            color:$color_green;
+            cursor: pointer;
+            
+        }
+        &-authors {
+            margin-top: 216px;
+            padding-left: 139px;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 16px;
+            line-height: 21px;
+            color: $color_white;
+            opacity: 0.5;
+            div {
+                margin-top: 10px;
+            }
+        }
+    }
+}

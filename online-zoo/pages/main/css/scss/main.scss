@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/button';
+
+@import 'normalize';
+@import 'header';
+@import 'promo';
+@import 'backstage';
+@import 'animals';
+@import 'donations';
+@import 'testimonials';
+@import 'footer';
+

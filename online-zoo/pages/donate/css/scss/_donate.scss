@@ -1,0 +1,286 @@
+.donate {
+    min-height: 1482px;
+    background: $orange_gradient;
+    padding: 40px 0 180px;
+    &__title {
+        margin: 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 47px;
+        color: $color_white;
+    }
+    &__descr {
+        margin: 10px 0 0 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: $color_white;
+    }
+    &__info {
+        margin: 45px 0 0 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 47px;
+        color: $color_btns;
+    }
+    &__feed {
+        margin-top: 60px;
+        background: $color_frosted-glass;
+        backdrop-filter: blur(2px);
+        border-radius: 20px;
+        padding: 40px 92px 62px;
+        &-title {
+            margin: 0;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 58px;
+            text-align: center;
+            color: $color_btns;
+        }
+        &-subtitle {
+            margin-top: 25px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: $typography_color;
+        }
+        &-wrapper {
+            margin: 60px auto 0;
+            padding: 0;
+            width: 532px;
+          display: flex;
+          
+            
+        }
+        &-counter {
+            padding-top: 100px;
+        }
+        
+        &-number {
+            
+            font-style: normal;
+            font-weight: 500;
+            font-size: 72px;
+            line-height: 58px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $color_black;
+
+        }
+        &-descr {
+            margin-top: 11px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            color: $typography_color;
+        }
+        &-cross{
+            padding-top: 126px;
+            padding-left: 5px;
+            margin-right: 64px;
+               
+        }
+        &-amount {
+            margin: 40px 0 0 0 ;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: $color_black;
+        }
+        &-progress_bar {
+            position: relative;
+            margin-top: 17px;
+            height: 27px;
+            background: $progress_bar_color;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px 0 30px;
+            &::before {
+                content:'';
+                position: absolute;
+                height: 2px;
+                width: 93%;
+                
+                background: #72828E;
+                z-index: 1;
+            }
+        }
+        &-circle {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            
+            justify-content: space-between;
+            align-items: center;
+            z-index: 2;
+            cursor: pointer;
+            & span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 10px;
+                height: 10px;
+                background-color: $color_yellow;
+                border-radius: 100%;
+                
+            }
+            &:hover {
+                @include before_circle;
+                @include after_circle;
+                
+                &::before {
+                    opacity: 0.5;
+                }
+                &::after {
+                    opacity: 0.5;
+                }
+            }
+            &-active {
+                
+                @include before_circle;
+                @include after_circle;
+            }
+        }
+        &-prices {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 11px;
+            
+        }
+        &-price {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 36px;
+            text-transform: uppercase;
+            color: $typography_color;
+           
+            
+            
+           
+            &:not(:first-child) {
+                
+                    transform: translateX(-50%);
+                
+            }
+            &-active {
+                color: $color_btns;
+            }
+            
+        }
+        &-input {
+            position: relative;
+            width: 268px;
+            height: 54px; 
+            margin: 50px auto 0;
+            input[type=number] {
+                -moz-appearance: textfield;
+            }
+            input {
+                width: inherit;
+                height: inherit;
+                padding: 0 0 0 9px;
+                border: 1px solid #929699;
+                border-radius: 2px;
+                outline: none;
+                background-color: rgba(0, 0, 0, 0);
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                    
+                
+                }
+            
+                     
+            }
+            
+            
+            &-icon {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 11px;
+            }
+
+        }
+        &-radio {
+            &_btns {
+                width: 268px;
+                margin: 0 auto;
+                padding: 25px 25px 0 26px ; 
+                display: flex;
+                align-items: center;
+            }
+            &-btn {
+                
+                input[type="radio"] {
+                    position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    opacity: 0;
+                    &:checked + span::after {
+                        opacity: 1;
+                    }
+                    &:checked + span::before {
+                        border: 1px solid $color_green;
+                    }
+                }
+                span {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: $typography_color;
+                    &::before {
+                        content: '';
+                        width: 15px;
+                        height: 15px;
+                        border: 1px solid $color_btns;
+                        display: inline-block;
+                        margin-right: 10px;
+                        border-radius: 100%;
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 1px;
+                        width: 15px;
+                        height: 15px;
+                    
+                        background-color: $color_green;
+                        border-radius: 100%;
+                        opacity: 0;
+                    }
+                }
+                &:first-child {
+                    margin-right: 50px;
+                }
+            }
+              
+        }
+        &-btn {
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        &-share {
+            margin-top: 34px;
+            text-align: center;
+        }
+    }
+}
