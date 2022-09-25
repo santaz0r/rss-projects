@@ -411,7 +411,7 @@ template {
 
 .promo {
   min-height: 386px;
-  background: url("/assets/images/Giant_Panda.jpg") no-repeat center/cover;
+  background: url("../../../assets/images/Giant_Panda.jpg") no-repeat center/cover;
 }
 
 .donate {
@@ -577,7 +577,6 @@ template {
   height: 23px;
   border-radius: 100%;
   border: 1px solid #FE9013;
-  opacity: 0.5;
 }
 .donate__feed-circle:hover::after {
   content: "";
@@ -590,6 +589,11 @@ template {
   height: 40px;
   border-radius: 100%;
   border: 1px solid #FE9013;
+}
+.donate__feed-circle:hover::before {
+  opacity: 0.5;
+}
+.donate__feed-circle:hover::after {
   opacity: 0.5;
 }
 .donate__feed-circle-active::before {
