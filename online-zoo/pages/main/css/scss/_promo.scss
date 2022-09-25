@@ -1,0 +1,65 @@
+.promo {
+    
+    min-height: 700px;
+    background: url('/assets/images/Giant_Panda.jpg') no-repeat center / cover;
+    padding-top: 86px;
+    
+    &__container{
+        position: relative;
+       display: flex;
+       flex-direction: column;
+        
+        width: 500px;
+        height: 400px;
+        margin-left: 660px;
+        z-index: 1;
+        &::before{
+            content: '';
+                position: absolute;
+                width: 465px;
+                height: 465px;
+                border-radius: 100%;
+                background-color: $color_orange;
+                left: -72px;
+                top: -72px;
+                z-index: -1;
+               
+       
+           
+        }
+    }
+
+    &__slogan{
+        
+        margin: 0;
+        font-size: 106px;
+        font-weight: 700;
+        line-height: 80px;
+        letter-spacing: 0em;
+        text-align: center;
+        text-transform: uppercase;
+        color:$color_white;
+       
+        & span {
+            color:$color_yellow;
+        }
+        
+    }
+    &__btn {
+        margin: 0 auto;
+        width: 298px;
+        min-height: 54px;
+        margin-top: 60px;
+        text-align: center;
+        border-radius: 25px;
+        border: none;
+        background: $color_orange;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: $color_white;
+       
+    }
+    
+}

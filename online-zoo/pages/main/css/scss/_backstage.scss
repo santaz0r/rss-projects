@@ -1,0 +1,52 @@
+.backstage{
+    min-height: 723px;
+    padding-top: 140px;
+    position: relative;
+    &__wrapper{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    &__photo {
+        margin-right: 87px;
+    }
+    &__title {
+        margin: 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 58px;
+        color: $typography_color;
+    }
+    &__founded {
+        margin-top: 20px;
+        color: $typography_color;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+    }
+    &__subtitle {
+        margin: 54px 0 0 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: $typography_color;
+    }
+    &__description {
+        margin: 34px 0 0 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: $typography_color;
+    }
+    &__flowers{
+        position: absolute;
+        right: 0;
+        top: 12px;
+    }
+}
