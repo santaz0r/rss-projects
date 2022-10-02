@@ -3,21 +3,13 @@
     background-color: black;
     height: 80px;
     padding: 14px 0;
-    &__h1 {
-        display: none;
-    }
+    z-index: 10000;
     &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    &__logo {
-        margin-right: 63px;
-       img {
-        font-weight: normal;
-        font-size: small;
-       }
-    }
+    
     &__menu{
         display: flex;
        padding: 0;
@@ -65,4 +57,7 @@
     }
    
    
+}
+.burger-menu {
+    display: none;
 }

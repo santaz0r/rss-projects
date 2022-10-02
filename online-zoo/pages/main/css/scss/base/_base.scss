@@ -1,0 +1,37 @@
+.logo {
+    margin-right: 63px;
+    width: 82px;
+    height: 52px;
+    text-decoration: none;
+    border: 1px solid $color_white;
+    border-radius: 2px;
+    padding: 4px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__name {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 23px;
+        text-align: center;
+        color: $color_white;
+        background: url('/assets/icons/bamboo.svg');
+        background-repeat: no-repeat;
+        background-position: left 7px bottom 5px;
+    }
+}
+@media (max-width: 999px) {
+    .logo {
+        border: none;
+        width: 47px;
+        height: 29px;
+        &__name {
+            font-size: 12px;
+            line-height: 14.75px;
+            background-size: 4.5px 13.5px;
+            background-position: left 5px bottom 4px;
+        }
+    }
+}
+

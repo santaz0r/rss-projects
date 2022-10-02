@@ -9,7 +9,7 @@
         column-gap: 30px;
         row-gap: 20px;
         &-info {
-            transition: all 1.0s ease;
+            transition: all 1.0s cubic-bezier(0.39, 0.58, 0.57, 1);;
         }
         &-icon {
             transition: all 1.0s ease;
@@ -22,18 +22,17 @@
             position: relative;
             cursor: pointer;
             &:hover {
-                
+                background-color: $color_orange;
                  .animals__wrapper-photo img {
                     position: relative;
-                    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.9);
+                    
+                    filter: brightness(0.4);
                     transform: scale(1.06);
-                    z-index: 100;
+                    
                 }
                 .animals__wrapper {
                     &-info {
-                        position: absolute;
-                        bottom: 65px;
-                        transform: translate(75px, 75px);
+                        transform: translate(0, -60px);
                         z-index: 100;
 
                     }
@@ -41,10 +40,13 @@
                         text-align: center;
                         transform: scale(1.2);
                         color: $color_white; 
+                        
+                            
+                        
                     }
                     &-icon {
 
-                            transform: scale(0.1);
+                            transform: scale(0);
                     } 
                 }  
             }
