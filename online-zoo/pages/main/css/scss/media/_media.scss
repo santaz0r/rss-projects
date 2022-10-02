@@ -1,0 +1,624 @@
+@media (max-width: 1599px) {
+    .container {
+        max-width: 940px;
+    }
+
+    //promo
+    .promo {
+        min-height: 584px;
+        margin-top: -84px;
+        padding-top: 126.8px;
+        &__container {
+            width: 400px;
+            height: 320px;
+            margin-left: 493px;
+            &::before {
+                width: 367px;
+                height: 367px;
+                left: -59px;
+                top: -53px;
+
+
+            }
+        }
+        &__slogan {
+            font-size: 85px;
+            line-height: 64px;
+        }
+        &__btn {
+            margin-top: 40.2px;
+        }
+    }
+
+    //backstage
+    .backstage {
+        min-height: 669px;
+        padding-top: 103px;
+        padding-bottom: 142px;
+
+        &__photo {
+            min-width: 455px;
+            height: 408px;
+            margin-right: 31px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        
+
+        &__flowers {
+            display: none;
+        }
+    }
+
+
+    // animals grid
+    .animals {
+        min-height: 1075px;
+        &__wrapper {
+        grid-template-columns: repeat(3, minmax(auto, 294px));
+        grid-template-rows: repeat(2, minmax(auto, 354px));
+        column-gap: 29px;
+        row-gap: 92px;
+
+        }
+        &__arrow-left {
+            
+            left: 35%;
+        }
+        &__arrow-right {
+            right: 33%;
+        }
+        &__strelitzia {
+            height: 180px;
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__palm {
+            height: 202px;
+            width: 194px;
+            background-image: url('/assets/images/palm_foto_1000.png');
+           background-repeat: no-repeat;
+           & img{
+            display: none;
+           }
+        }
+    }
+
+    // donations 
+    .donations {
+        min-height: 876px;
+        padding: 30px 30px 50px 30px;
+        &__wrapper {
+         
+                height: 796px;
+            &-info {
+                
+                padding-left: 49px ;
+                padding-right: 31px;
+            }
+            &-title {
+                margin: 30px 0 0 0;
+            }
+            &-subtitle {
+                margin: 20px 0 0 0;
+            }
+            &-description {
+                margin: 20px 0 0 0;
+            }
+            &-about {
+                margin: 10px 0 0 0;
+                br {
+                    display: none;
+                }
+            }
+            &-how-title {
+                margin: 40px 0 0 0;
+            }
+            &-btn {
+            margin: 70px auto 0;
+
+            }
+        }
+        
+    }
+
+
+    // testimonials
+    .testimonials {
+        min-height: 842px;
+        padding-top: 100px;
+        &__wrapper {
+            padding: 3px 0 3px 3px;
+            margin-top: 30px;
+            overflow: hidden;
+            justify-content: space-between;
+            
+        }
+        &__item {
+            background: #FFF;
+           
+            min-width: 291px;
+            height: 389px;
+
+            
+        }
+        &__scroll {
+            width: 390px;
+            margin-top: 20px;
+            & span {
+                width: 75px ;
+            }
+        }
+        &__btn {
+            margin-top: 49px;
+        }
+        &__leaf {
+            height: 200px;
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+    }
+
+    
+}
+
+@media (max-width: 999px) {
+    .container {
+        max-width: 94%;
+    }
+    .promo {
+        min-height: 373px;
+        margin-top: 0px;
+        padding-top: 83px;
+        
+        &__container {
+            width: 255px;
+            height: 204px;
+            margin-left: 58%;
+            &::before {
+                width: 237px;
+                height: 237px;
+                left: -36px;
+                top: -40px;
+            }
+        }
+        &__slogan {
+            font-size: 54px;
+            line-height: 41px;
+        }
+        &__btn {
+            position: absolute;
+            margin: 0;
+            left: -348px;
+            bottom: -46px;
+        }
+    }
+    
+
+    .backstage {
+        min-height: 507px;
+        padding: 60px 0 80px;
+        &__wrapper{ 
+            justify-content: flex-start;
+        }
+        &__photo {
+            display: none;
+        }
+        &__info {
+            max-width: 495px;
+        }
+        &__founded {
+            margin: 20px 0 0 0;
+        }
+        &__subtitle {
+            margin-top: 30px;
+        }
+        &__description {
+            margin-top: 20px;
+        }
+        &__flowers {
+            display: block;
+            width: 130px;
+            height: 476px;
+            overflow: hidden;
+            top: -4px;
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+
+    .animals {
+        min-height: 970px;
+        &__wrapper {
+            margin: 0 auto;
+            overflow: hidden;
+            width: 600px;
+            grid-template-columns: repeat(3, minmax(auto, 285px));
+            grid-template-rows: repeat(2, minmax(auto, 332px));
+            &-item {
+                min-width: 285px;
+                
+            }
+            &-descr {
+                padding: 3px 1px 0 11px;
+            }
+            &-title {
+                font-size: 12.5px;
+                line-height: 17px;
+            }
+            &-subtitle {
+                font-size: 11.7px;
+                line-height: 14px;
+               
+            }
+            &-photo {
+                height: 283px;
+            }
+            &-icon {
+                transform: scale(0.8);
+            }
+        }
+        &__arrow-right {
+            right: 37%;
+        }
+        &__arrow-left {
+            left: 37%;
+        }
+        &__btn {
+            margin-top: 60px;
+        }
+        &__palm {
+            left: -56px;
+        }
+        &__strelitzia {
+            height: 131px;
+        }
+    }
+
+
+    .donations {
+        min-height: 781px;
+        padding: 20px 0;
+        & .container {
+            border-radius: 20px;
+            box-shadow: -20px 0px 0px 0px rgb(253 253 255 / 52%);
+        }
+
+        &__wrapper{
+            height: 741px;
+            box-shadow: 20px 0px 0px 0px rgb(253 253 255 / 52%);
+            padding: 0 0px;
+            &-info {
+                padding: 0;
+            }
+            &-title {
+                font-size: 42px;
+                line-height: 50px;
+                margin-top: 10px;
+            }
+            &-subtitle {
+                font-size: 22px;
+                line-height: 26px;
+            }
+            &-how-title {
+                margin-top: 30px;
+            }
+            &-container {
+                position: relative;
+                margin-top: 21px;
+                
+            }
+
+            &-card{
+                margin-right: 46px;
+                &-arrow {
+                    margin: 0;
+                    position: absolute;
+                    width: 90px;
+                    height: 32px;
+                    background-image: url('../../../../../assets/icons/arrowStep.svg');
+                    background-repeat:no-repeat;
+                    
+                    
+                    img {
+                        display: none;
+                    }
+                    &:nth-child(2) {
+                        left: 140px;
+                        top: -17px;
+                    }
+                    &:nth-child(4) {
+                        left: 355px;
+                        top: -17px;
+                    }
+                }
+            }
+            &-btn {
+                margin-top: 40px;
+            }
+        }
+    }
+
+
+    .testimonials {
+        min-height: 668px;
+        padding-top: 60px;
+        &__wrapper {
+            flex-direction: column;
+            max-height: 362px;
+        }
+        &__item {
+            min-height: 109px;
+            width: 99.7%;
+            padding: 11px 29px 8px 9px;
+            margin: 0 0 15px;
+           
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &-avatar {
+                display: flex;
+            }
+
+            &-descr {
+                overflow: hidden;
+                height: 35px;
+                padding-left: 5px;
+            }
+           
+        }
+        &__scroll {
+            display: none;
+        }
+        &__btn {
+            margin: 40px auto;
+            width: 240px;
+        }
+        &__leaf {
+            height: 113px;
+        }
+    }
+}
+
+@media (max-width: 639px) {
+    .container {
+        min-width: 300px;
+    }
+
+
+    .promo {
+        min-height: 187px;
+        margin-top: 34px;
+        padding-top: 41px;
+
+        &__container {
+            margin-left: 57%;
+            width: 128px;
+            height: 102px;
+            &::before {
+                width: 119px;
+                height: 119px;
+                left: -18px;
+                top: -19px;
+            }
+        }
+        &__slogan {
+            font-size: 28px;
+            line-height: 21px;
+        }
+        &__btn {
+            left: -169px;
+            bottom: -118px;
+        }
+    }
+
+
+    .backstage {
+        min-height: 532px;
+        padding: 104px 0 40px;
+
+        &__wrapper {
+            justify-content: center;
+        }
+        &__info {
+            max-width: 285px;
+        }
+        &__title {
+            font-size: 24px;
+            line-height: 29px;
+        }
+        &__founded {
+            margin-top: 10px;
+        }
+        &__subtitle {
+            margin-top: 20px;
+        }
+        &__description {
+            margin-top: 10px;
+        }
+        &__flowers {
+            width: 30px;
+            height: 217px;
+            top: 39px;
+        }
+    }
+
+
+    .animals {
+        min-height: 1522px;
+        &__wrapper {
+            
+            width: unset;
+            grid-template-columns: repeat(1, minmax(auto, 285px));
+            grid-template-rows: repeat(4, minmax(auto, 332px));
+            column-gap: 0;
+            row-gap: 20px;
+            height: 1388px;
+            justify-content: center;
+            &-item {
+                min-height: 332px;
+            }
+        }
+        &__arrow-right, &__arrow-left {
+            display: none;
+        }
+        &__btn {
+            margin-top: 20px;
+        }
+        &__palm {
+            left: -74px;
+            bottom: -65px;
+            transform: scale(0.35);
+        }
+
+        &__strelitzia{
+            height: 71px;
+            bottom: -4px;
+            width: 75px;
+            overflow: hidden;
+        }
+         
+    }
+
+
+
+    .donations {
+        min-height: 1082px;
+        padding: 20px 11px 20px 10px;
+        & .container {
+            border-radius: none;
+            box-shadow: none;
+        }
+        &__wrapper{
+            min-height: 1042px;
+            width: unset;
+            padding: 0;
+            box-shadow: none;
+            &-title, &-how-title {
+                font-size: 24px;
+                line-height: 29px;
+                margin-top: 20px;
+            }
+            &-subtitle {
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;
+                margin-top: 10px;
+            }
+            &-description, &-about {
+                display: none;
+            }
+            &-container {
+                flex-direction: column;
+
+                
+            }
+            &-card {
+                height: 222px;
+                margin-right: 0;
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &-info {
+                    margin-top: 10px;
+                }
+
+                &-arrow {
+                    &:nth-child(2) {
+                        left: 138px;
+                        top: 191px;
+                        transform: rotate(90deg);
+                    }
+                    &:nth-child(4) {
+                        left: 138px;
+                        top: 441px;
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+            &-btn {
+                margin-top: 47px;
+            }
+        }
+    }
+
+
+    .testimonials {
+        min-height: 580px;
+        padding-top: 30px;
+
+        &__title {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        &__wrapper {
+            margin-top: 20px;
+            padding: 3px;
+        }
+        &__btn {
+            margin-top: 30px;
+        }
+        &__leaf {
+            height: 56px;
+            
+        }
+    }
+}
+
+@media (max-width: 319px) {
+    
+    .promo__container {
+        margin-left: 56.56%;
+    }
+    .container {
+        min-width: 94%;
+    }
+    .promo__btn {
+        width: 90vw;
+    }
+    
+    
+    .animals {
+        min-height: 1522px;
+        &__wrapper {
+            
+         
+            grid-template-columns: repeat(1, minmax(auto, auto));
+            grid-template-rows: repeat(4, minmax(auto, auto));
+            
+            justify-content: center;
+            &-item {
+               
+                min-width: auto;
+            }
+        }
+        &__btn {
+            max-width: 100%;
+        }
+    }
+    .testimonials__item{
+        min-width: 90%;
+    }
+    
+    .donations {
+        &__wrapper-btn {
+            max-width: 100%;
+        }
+    }
+   
+}
