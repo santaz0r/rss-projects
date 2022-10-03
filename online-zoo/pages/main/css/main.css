@@ -52,7 +52,7 @@
   line-height: 23px;
   text-align: center;
   color: #fff;
-  background: url("/assets/icons/bamboo.svg");
+  background: url("../../../assets/icons/bamboo.svg");
   background-repeat: no-repeat;
   background-position: left 7px bottom 5px;
 }
