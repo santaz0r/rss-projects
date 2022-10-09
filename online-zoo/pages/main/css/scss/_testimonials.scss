@@ -13,17 +13,28 @@
         color: $typography_color;
     }
     &__wrapper {
-        display: flex;
+       
         margin-top: 47px;
+        overflow: hidden;
+        padding: 3px 0 3px 3px;
+    }
+    &__carousel {
+        display: flex;
+        padding: 3px 0 3px 3px;
+        left: 0;
+        position: relative;
+        transition: all 0.2s linear;
     }
     &__item {
         position: relative;
         padding: 15px 15px 19px 16px;
-        margin-right: 30px;
+        margin-right: 27px;
         background: #F1F3F2;
         border-radius: 20px;
-        width: 268px;
+        min-width: 268px;
         height: 391px;
+        left: 0;
+       
         &:last-child{
             margin-right: 0;
         }
@@ -68,16 +79,32 @@
             display: flex;
             align-items: center;
         }
+        
     }
     &__scroll {
+        display: block;
         position: relative;
         margin: 0 auto;
         margin-top: 21px;
         background: $color_white;
-        
+        -webkit-appearance: none;
         border-radius:5px;
         width: 599px;
         height: 8px;
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 12.5%;
+            height: 8px;
+            background: $color_btns;
+            border-radius: 5px;
+            &:hover {
+                background:$color_btn_hover;
+            }
+            &:active {
+                background:$color_green;
+
+            }
+        }
         &::before {
             content: '';
             position: absolute;
@@ -111,4 +138,36 @@
         bottom: 0;
         height: 246px;
     }
+}
+
+
+.popup {
+    &_wrapper {
+        position: absolute;
+        top: 25vh;
+        left: 3vw;
+        
+        z-index: 1;
+        background-color:rgba( white, .0);
+         @media (max-width: 999px) {
+            left: 50%;
+         }
+         @media (max-width: 639px) {
+            left: 3%;
+         }
+
+      }
+    &_close {
+        position: relative;
+        cursor: pointer;
+        &::before {
+            content: '\00D7';
+            position: absolute;
+            left: 285px;
+            top: -17px;
+            color:$color_orange;
+            font-size: 32px;
+        }
+    }
+
 }
