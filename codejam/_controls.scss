@@ -1,0 +1,16 @@
+.controls {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+.cheat_info {
+    margin-bottom: 15px;
+    font-size: 15px;
+    text-align: end;
+    text-decoration: underline;
+    cursor: pointer;
+    opacity: 0.3;
+    &:hover {
+        color: red;
+    }
+}
