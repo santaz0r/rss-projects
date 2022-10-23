@@ -114,7 +114,8 @@ function renderGame(data) {
       });
     }
     if (!loadItems) {
-      const maxShuffle = 2;
+      const maxShuffle = (mode * 10) / 2 + 5;
+      console.log(maxShuffle);
       let shuffleTimer;
       let shuffleCount = 0;
       if (shuffleCount === 0) {
