@@ -1,0 +1,278 @@
+
+    .size-3 {
+        $width: 300px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 33%;
+            width: $width;
+            height: $width;
+        }
+    }
+    .size-4 {
+        $width: 97%;
+        min-width: $width;
+        padding-bottom: $width;
+        .item {
+            $width: 25%;
+            width: $width;
+            height: $width;
+        }
+    }
+    .size-5 {
+        $width: 500px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 20%;
+            width: $width;
+            height: $width;
+        }
+    }
+    .size-6 {
+        $width: 600px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 16%;
+            width: $width;
+            height: $width;
+        }
+    }
+    .size-7 {
+        $width: 700px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 14.3%;
+            width: $width;
+            height: $width;
+        }
+    }
+    .size-8 {
+        $width: 700px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 11%;
+            width: $width;
+            height: $width;
+        }
+    }
+
+@media (max-width:1000px) {
+    .wrapper {
+        &_game {
+            flex-direction: column;
+        }
+    }
+    .controls {
+        padding-top: 10px;
+    }
+    .size-5 {
+        $width: 400px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 18.75%;
+            width: $width;
+            height: $width;
+        }
+    }
+    .size-6 {
+        $width: 400px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 16.75%;
+            width: $width;
+            height: $width;
+        }
+    }
+    .size-7 {
+        $width: 450px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 14.3%;
+            width: $width;
+            height: $width;
+        }
+    }
+    .size-8 {
+        $width: 470px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 12%;
+            width: $width;
+            height: $width;
+        }
+    }
+
+}
+
+@media (max-width:530px) {
+    .size-7 {
+        $width: 400px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 14.25%;
+            width: $width;
+            height: $width;
+            font-size: 26px;
+        }
+    }
+    .size-8 {
+        $width: 400px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 12.5%;
+            width: $width;
+            height: $width;
+            font-size: 26px;
+        }
+    }
+
+}
+@media (max-width:430px) {
+    .size-3 {
+        $width: 300px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 33.3%;
+            width: $width;
+            height: $width; 
+        }
+    }
+    .size-4 {
+        $width: 250px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 25%;
+            width: $width;
+            height: $width;  
+        }
+    }
+    .size-5 {
+        $width: 300px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 20%;
+            width: $width;
+            height: $width;  
+            font-size: 28px;
+        }
+    }
+    .size-6 {
+        $width: 300px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 16.67%;
+            width: $width;
+            height: $width;  
+            font-size: 28px;
+        }
+    }
+
+    .size-7 {
+        $width: 300px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 14.29%;
+            width: $width;
+            height: $width;  
+            font-size: 28px;
+        }
+    }
+    .size-8 {
+        $width: 320px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 12.5%;
+            width: $width;
+            height: $width;  
+            font-size: 28px;
+        }
+    }
+
+}
+
+@media (max-width:320px) {
+    .size-8 {
+        $width: 290px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 12.5%;
+            width: $width;
+            height: $width;  
+            font-size: 28px;
+        }
+    }
+    .size-7 {
+        $width: 290px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 14%;
+            width: $width;
+            height: $width;  
+            font-size: 28px;
+        }
+    }
+    .size-6 {
+        $width: 290px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 16.6%;
+            width: $width;
+            height: $width;  
+            font-size: 28px;
+        }
+    }
+    .size-5 {
+        $width: 290px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 20%;
+            width: $width;
+            height: $width;  
+            font-size: 28px;
+        }
+    }
+    .size-4 {
+        $width: 250px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 25%;
+            width: $width;
+            height: $width;  
+            font-size: 28px;
+        }
+    }
+    .size-3 {
+        $width: 290px;
+        width: $width;
+        height: $width;
+        .item {
+            $width: 33%;
+            width: $width;
+            height: $width;  
+            font-size: 58px;
+        }
+    }
+}
+    
+   

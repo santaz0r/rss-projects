@@ -1,0 +1,73 @@
+.overlay {
+    display: block;
+    position: absolute;
+    top: -200%;
+   
+    min-height: 100vh;
+    width: 100%;
+    background-color:rgba(0,0,0, 0.9);
+    transition: all 0.3s ease;
+    &_active {
+        
+        right: 0px;
+        top: 0;
+        z-index: 1;
+      
+    }
+
+}
+
+.cheat_popup {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.5);
+    z-index: 10;
+    transition: all 0.3s;
+    &-item {
+        width: 20%;
+        border:2px solid aquamarine;
+        border-radius: 10px;
+        padding: 10px;
+        position: relative;
+        & span {
+            font-weight: bold;
+        }
+        @media (max-width: 900px) {
+            width: 30%;
+        }
+        @media (max-width: 550px) {
+            width: 40%;
+        }
+        @media (max-width: 400px) {
+            width: 50%;
+        }
+        
+
+    }
+    &-descr {
+        margin-top: 3px;
+        display: block;
+        font-size: 13px;
+        font-style: italic;
+        filter: opacity(15%);
+        
+    }
+    &-close {
+        position: absolute;
+        right: -25px;
+        top: -25px;
+        background: none;
+        color: aquamarine;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    &-active {
+        opacity: 1;
+        
+    }
+}
