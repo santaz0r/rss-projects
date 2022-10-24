@@ -421,6 +421,42 @@ template {
   padding-top: 25px;
 }
 
+@-webkit-keyframes textFlewUp {
+  from {
+    top: 15;
+    opacity: 1;
+  }
+  to {
+    top: -13px;
+    opacity: 0;
+  }
+}
+
+@keyframes textFlewUp {
+  from {
+    top: 15;
+    opacity: 1;
+  }
+  to {
+    top: -13px;
+    opacity: 0;
+  }
+}
+.saved {
+  position: relative;
+  pointer-events: none;
+}
+.saved::before {
+  content: "Saved";
+  position: absolute;
+  color: aquamarine;
+  top: 10px;
+  left: 35%;
+  font-size: 20px;
+  -webkit-animation: textFlewUp 0.5s;
+          animation: textFlewUp 0.5s;
+}
+
 .button {
   padding: 10px;
   width: 200px;

@@ -5,6 +5,33 @@
     align-items: center;
     padding-top: 25px;
 }
+
+@keyframes textFlewUp {
+    from {
+        top: 15;
+        opacity: 1;
+    }
+    to {
+        top:-13px;
+        opacity: 0;
+
+    }
+}
+
+.saved {
+    position: relative;
+    pointer-events: none;
+    &::before {
+        content:'Saved';
+        position: absolute;
+        color: aquamarine;
+        top: 10px;
+        left: 35%;
+        font-size: 20px;
+        animation: textFlewUp .5s ;
+    }
+}
+
 .button {
     padding: 10px;
     width: 200px;
@@ -13,11 +40,13 @@
     outline: none;
     border: 1px solid black;
     border-radius: 10px;
+    
     &:hover {
         color: white;
         background-color: rgb(47, 84, 102);
         border-color: #f0f2f5;
     }
+    
     
     &_start {
         width: 100%;
