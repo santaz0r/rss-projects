@@ -305,7 +305,13 @@ function renderGame(data) {
     };
 
     saveBtn.addEventListener("click", () => {
+      saveBtn.classList.add("saved");
+      saveBtn.disabled = true;
       saveGame(saveData);
+      setTimeout(() => {
+        saveBtn.disabled = false;
+        saveBtn.classList.remove("saved");
+      }, 450);
     });
     function toggleMute() {
       isMuted ? (isMuted = false) : (isMuted = true);
