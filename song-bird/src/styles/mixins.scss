@@ -1,0 +1,23 @@
+@mixin flex($justify: unset, $align: unset) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin audioUrl($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@mixin gradient($color1, $color2, $color3) {
+  background: linear-gradient(90deg, $color1 0%, $color2 45%, $color3 100%);
+}
+
+@mixin borderRadiuses($left: unset, $right: unset) {
+  border-top-left-radius: $left;
+  border-bottom-left-radius: $left;
+
+  border-top-right-radius: $right;
+  border-bottom-right-radius: $right;
+}

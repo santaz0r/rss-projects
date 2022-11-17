@@ -1,0 +1,54 @@
+.birds {
+  padding: 10px 0;
+  @include flex($justify: center, $align: center);
+  flex-wrap: wrap;
+  &__item {
+    @include flex($justify: space-between, $align: center);
+    flex: 1 1 1;
+  }
+}
+
+.item {
+  padding: 0.5%;
+  margin: 0.5% 0;
+  border: 1px solid $neutral-color;
+  border-radius: 10px;
+  flex-direction: column;
+  margin-right: 15px;
+
+  &__img {
+    width: 250px;
+    height: 150px;
+    border-radius: inherit;
+  }
+
+  &__names {
+    text-align: center;
+    @include flex($justify: space-between);
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 22px;
+    padding: 2.5px;
+  }
+
+  &__latin {
+    font-size: 14px;
+    padding: 2.5px;
+  }
+
+  &__btn {
+    width: 90%;
+    height: unset;
+    padding: 5px;
+    text-align: center;
+    outline: none;
+    border: 1px solid $neutral-color;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import "./styles/normalize";
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.page {
+  background-color: $page-color;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  position: relative;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.main,
+.quiz,
+.gallery {
+  flex: 1 0 auto;
+}

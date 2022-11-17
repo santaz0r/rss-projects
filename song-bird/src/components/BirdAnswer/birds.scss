@@ -1,0 +1,40 @@
+.birds {
+  &-item {
+    padding: 20px 10px;
+
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    @include flex($justify: flex-start, $align: center);
+    border: 1px solid $neutral-color;
+    transition: all 0.2s linear;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+    &.wrong {
+      border: 1px solid $wrong-color;
+      @include gradient($color1: #00000000, $color2: #941212, $color3: #6e0606);
+
+      .birds-icon {
+        @include audioUrl($url: "./assets/wrong.svg");
+      }
+    }
+    &.right {
+      border: 1px solid $right-color;
+
+      @include gradient($color1: #00000000, $color2: #27922a, $color3: #1c8507);
+      .birds-icon {
+        @include audioUrl($url: "./assets/correct.svg");
+      }
+    }
+  }
+
+  &-icon {
+    width: 15px;
+    height: 15px;
+    @include audioUrl($url: "./assets/question.svg");
+    margin-right: 10px;
+    transition: all 0.2s linear;
+  }
+}

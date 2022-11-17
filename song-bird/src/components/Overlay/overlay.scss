@@ -1,0 +1,62 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(#000, $alpha: 0.5);
+  width: 100%;
+  height: 100%;
+
+  font-size: 30px;
+  z-index: 1;
+  @include flex($justify: center, $align: center);
+  &__container {
+    padding: 2%;
+    width: 70%;
+    height: 30%;
+    transform: translateY(-50%);
+
+    background-color: gray;
+    text-align: center;
+    border-radius: 20px;
+    @include flex($justify: space-between, $align: center);
+    flex-direction: column;
+    @media (max-width: 590px) {
+      height: 20%;
+      transform: translateY(-70%);
+    }
+  }
+  &__title {
+    @media (max-width: 420px) {
+      font-size: 25px;
+    }
+  }
+  &__info {
+    font-size: 26px;
+    @media (max-width: 420px) {
+      font-size: 20px;
+    }
+  }
+  &__buttons {
+    @include flex($justify: space-between, $align: center);
+    width: 90%;
+  }
+  &__btn {
+    text-decoration: none;
+    color: $text-color;
+    background-color: $btn-color;
+    border-radius: 10px;
+    font-size: 22px;
+    padding: 3px;
+    transition: all 0.2s linear;
+    @media (max-width: 420px) {
+      font-size: 18px;
+    }
+    &.alone {
+      width: 100%;
+    }
+    &:hover {
+      background-color: $hover-color;
+      scale: 1.1;
+    }
+  }
+}

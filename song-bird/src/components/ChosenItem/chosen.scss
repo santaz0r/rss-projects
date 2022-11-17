@@ -1,0 +1,44 @@
+.card {
+  &__header {
+    @include flex($justify: flex-start);
+
+    @media (max-width: 840px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+  }
+
+  &__latin {
+    font-size: 14px;
+  }
+
+  &__img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  &__descr {
+    width: 100%;
+    text-align: center;
+    @media (max-width: 840px) {
+      padding: 10px 0 0;
+    }
+  }
+
+  &__audio {
+    padding: 10px 20px;
+  }
+
+  &__footer {
+    padding: 7% 0;
+    @media (max-width: 840px) {
+      padding: 0;
+    }
+  }
+}

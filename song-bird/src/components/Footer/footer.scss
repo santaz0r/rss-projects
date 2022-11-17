@@ -1,0 +1,38 @@
+.footer {
+  width: 100%;
+  min-height: 50px;
+  background-color: $main-color;
+  @include flex($align: center);
+  &__wrapper {
+    height: 100%;
+    @include flex($justify: space-between, $align: center);
+  }
+
+  &__gh-logo {
+    @extend %logos;
+    background-image: url("./assets/iconmonstr-github-1.svg");
+    text-decoration: none;
+    color: $text-color;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s;
+
+    &:hover {
+      scale: 1.1;
+    }
+  }
+  &__year {
+    font-weight: 500;
+    user-select: none;
+  }
+  &__rss-logo {
+    @extend %logos;
+    background-image: url("./assets/rs_school_js.svg");
+    width: 100px;
+
+    transition: all 0.3s;
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}
