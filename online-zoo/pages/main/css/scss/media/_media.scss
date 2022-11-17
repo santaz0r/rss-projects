@@ -2,6 +2,7 @@
     .container {
         max-width: 940px;
     }
+    
 
     //promo
     .promo {
@@ -58,18 +59,28 @@
     // animals grid
     .animals {
         min-height: 1075px;
-        &__wrapper {
+        &__carousel {
         grid-template-columns: repeat(3, minmax(auto, 294px));
         grid-template-rows: repeat(2, minmax(auto, 354px));
         column-gap: 29px;
         row-gap: 92px;
+        
+       
+        }
+        &__wrapper {
+            &-item {
+                min-width: 294px;
+                
+            }
+            
 
         }
         &__arrow-left {
-            
+            z-index: 10;
             left: 35%;
         }
         &__arrow-right {
+            z-index: 10;
             right: 33%;
         }
         &__strelitzia {
@@ -82,7 +93,7 @@
         &__palm {
             height: 202px;
             width: 194px;
-            background-image: url('/assets/images/palm_foto_1000.png');
+            background-image: url('../../../assets/images/palm_foto_1000.png');
            background-repeat: no-repeat;
            & img{
             display: none;
@@ -175,6 +186,9 @@
     .container {
         max-width: 94%;
     }
+    .overlay {
+        display: block;
+    }
     .promo {
         min-height: 373px;
         margin-top: 0px;
@@ -241,14 +255,22 @@
 
     .animals {
         min-height: 970px;
-        &__wrapper {
+        &__carousel {
             margin: 0 auto;
             overflow: hidden;
             width: 600px;
             grid-template-columns: repeat(3, minmax(auto, 285px));
             grid-template-rows: repeat(2, minmax(auto, 332px));
+           
+        }
+        &__wrapper {
+            margin: 0 auto;
+           
             &-item {
                 min-width: 285px;
+                &:nth-last-child(-n+2) {
+                    display: none;
+                }
                 
             }
             &-descr {
@@ -328,7 +350,7 @@
                     position: absolute;
                     width: 90px;
                     height: 32px;
-                    background-image: url('../../../../../assets/icons/arrowStep.svg');
+                    background-image: url('../../../assets/icons/arrowStep.svg');
                     background-repeat:no-repeat;
                     
                     
@@ -356,6 +378,9 @@
         min-height: 668px;
         padding-top: 60px;
         &__wrapper {
+            
+        }
+        &__carousel {
             flex-direction: column;
             max-height: 362px;
         }
@@ -377,6 +402,33 @@
                 overflow: hidden;
                 height: 35px;
                 padding-left: 5px;
+            }
+     
+
+            &_active {
+              
+                padding: 15px 15px 19px 16px;
+              
+                background: #F1F3F2;
+                border-radius: 20px;
+                width: 268px;
+                height: 391px;
+                position: absolute;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -2px;
+                    bottom: -2px;
+                    left: -2px;
+                    right: -2px;
+                    background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+
+                    border-radius: 20px;
+                    z-index: -1;
+                }
+                & .testimonials__item-descr {
+                    height: auto;
+                }
             }
            
         }
@@ -459,8 +511,7 @@
 
     .animals {
         min-height: 1522px;
-        &__wrapper {
-            
+        &__carousel {
             width: unset;
             grid-template-columns: repeat(1, minmax(auto, 285px));
             grid-template-rows: repeat(4, minmax(auto, 332px));
@@ -468,6 +519,12 @@
             row-gap: 20px;
             height: 1388px;
             justify-content: center;
+            grid-auto-flow: row;
+            min-width:  unset;
+        }
+        &__wrapper {
+            
+            
             &-item {
                 min-height: 332px;
             }

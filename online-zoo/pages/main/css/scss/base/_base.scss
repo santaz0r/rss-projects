@@ -16,7 +16,7 @@
         line-height: 23px;
         text-align: center;
         color: $color_white;
-        background: url('/assets/icons/bamboo.svg');
+        background: url("../../../assets/icons/bamboo.svg");
         background-repeat: no-repeat;
         background-position: left 7px bottom 5px;
     }
@@ -31,6 +31,9 @@
             line-height: 14.75px;
             background-size: 4.5px 13.5px;
             background-position: left 5px bottom 4px;
+            
+            transition: all 0.3s ease;
+            transition-delay: 0.2s;
         }
     }
 }

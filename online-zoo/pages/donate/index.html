@@ -15,6 +15,7 @@
   </head>
   <body>
     <header class="header">
+      <div class="overlay"></div>
       <div class="container">
         <div class="header__wrapper">
           <a class="logo header__logo" href="../main/index.html" target="_blank"
@@ -129,9 +130,12 @@
           <form class="donate__feed-form" action="">
             <div class="donate__feed-input">
               <input
+                class="feed-input"
                 type="number"
                 required
                 max="9999"
+                min="0"
+                value="100"
                 placeholder="Another amount"
               />
               <div class="donate__feed-input-icon">
@@ -218,7 +222,12 @@
 
           <ul class="footer__menu">
             <li class="footer__menu-item">
-              <a href="../main/index.html" target="_blank" class="footer__menu-link">About</a>
+              <a
+                href="../main/index.html"
+                target="_blank"
+                class="footer__menu-link"
+                >About</a
+              >
             </li>
             <li class="footer__menu-item">
               <a href="#" class="footer__menu-link">Map</a>
@@ -251,5 +260,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/burgerMenu.js"></script>
+    <script src="./js/donates.js"></script>
   </body>
 </html>

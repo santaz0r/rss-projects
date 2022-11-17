@@ -1,7 +1,7 @@
 @media (max-width: 1599px) {
     .footer {
-       padding: 40px 18px 50px 43px;
-       &__socials {
+        padding: 40px 31px 50px 30px;
+        &__socials {
         &-btn {
             margin-top: 68px;
         }
@@ -16,13 +16,14 @@
         }
        }
        &__about {
-        margin-left: -57px;
+        margin-left: -75px;
         &-subscribe {
             position: absolute;
-            right: 50px;
+            right: 63px;
         }
         &-authors {
             margin-top: 301px;
+            padding-left: 156px;
         }
        }
     }

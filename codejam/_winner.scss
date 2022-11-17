@@ -1,0 +1,34 @@
+.winner {
+    width: 70%;
+    min-height: 20vh;
+    margin: 10% auto 0 auto;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    
+    &__title {
+        margin: 0;
+        
+        text-align: center;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0;
+        font-size: 20px;
+        @media (max-width: 600px) {
+            flex-direction: column;
+        }
+    }
+    &__item {
+        & span {
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
+}
