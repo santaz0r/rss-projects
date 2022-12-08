@@ -9,8 +9,8 @@ class Loader {
 
     getResp(
         { endpoint, options }: { endpoint: string; options?: IOptions },
-        callback = (_data: IResponseArticleObj & IResponseSourcesObj) => {
-            console.error('No callback for GET response');
+        callback = (data: IResponseArticleObj & IResponseSourcesObj) => {
+            if (!data) console.error('No callback for GET response');
         }
     ): void {
         this.load('GET', endpoint, callback, options as IOptions);
