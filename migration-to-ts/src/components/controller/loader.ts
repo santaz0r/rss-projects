@@ -1,4 +1,4 @@
-import { Errors, IOptions, IResponseArticleObj } from './../../types/index';
+import { Errors, IOptions, IResponseArticleObj, IResponseSourcesObj } from './../../types/index';
 class Loader {
     baseLink: string;
     options: IOptions;
@@ -9,7 +9,7 @@ class Loader {
 
     getResp(
         { endpoint, options }: { endpoint: string; options?: IOptions },
-        callback = () => {
+        callback = (data: IResponseArticleObj & IResponseSourcesObj) => {
             console.error('No callback for GET response');
         }
     ): void {
@@ -41,7 +41,7 @@ class Loader {
     private load(
         method: 'GET' | 'POST',
         endpoint: string,
-        callback: (data: IResponseArticleObj) => void,
+        callback: (data: IResponseArticleObj & IResponseSourcesObj) => void,
         options: IOptions
     ): void {
         fetch(this.makeUrl({ options, endpoint }), { method })
