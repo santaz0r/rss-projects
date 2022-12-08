@@ -8,12 +8,12 @@ class Loader {
     }
 
     getResp(
-        { endpoint, options }: { endpoint: string; options: IOptions },
+        { endpoint, options }: { endpoint: string; options?: IOptions },
         callback = () => {
             console.error('No callback for GET response');
         }
     ): void {
-        this.load('GET', endpoint, callback, options);
+        this.load('GET', endpoint, callback, options as IOptions);
     }
 
     private errorHandler(res: Response): Response {
