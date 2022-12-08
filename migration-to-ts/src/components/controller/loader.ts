@@ -9,7 +9,7 @@ class Loader {
 
     getResp(
         { endpoint, options }: { endpoint: string; options?: IOptions },
-        callback = (data: IResponseArticleObj & IResponseSourcesObj) => {
+        callback = (_data: IResponseArticleObj & IResponseSourcesObj) => {
             console.error('No callback for GET response');
         }
     ): void {
