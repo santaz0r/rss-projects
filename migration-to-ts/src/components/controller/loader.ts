@@ -1,7 +1,7 @@
 import { Errors, IOptions, IResponseArticleObj, IResponseSourcesObj } from './../../types/index';
 class Loader {
-    baseLink: string;
-    options: IOptions;
+    readonly baseLink: string;
+    readonly options: IOptions;
     constructor(baseLink: string, options: IOptions) {
         this.baseLink = baseLink;
         this.options = options;
