@@ -14,10 +14,11 @@ header h1 {
 }
 
 footer {
+    padding: 10px 30px;
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 footer .copyright {
     font-size: 14px;
@@ -32,4 +33,27 @@ footer .copyright a:hover {
 }
 footer .copyright:before {
     content: '©';
+}
+
+footer .gh-logo {
+    width: 35px;
+    height: 35px;
+    background-image: url('./assets/iconmonstr-github-1.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 0.1s linear;
+}
+
+footer .rss-logo {
+    width: 100px;
+    height: 37px;
+    background-image: url('./assets/rss-logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 0.1s linear;
+}
+
+footer .rss-logo:hover,
+footer .gh-logo:hover {
+    scale: 1.1;
 }
