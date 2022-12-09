@@ -10,7 +10,7 @@ class App {
         this.view = new AppView();
     }
 
-    start() {
+    start(): void {
         const buttonsContainer = document.querySelector<HTMLDivElement>('.sources');
         if (buttonsContainer)
             buttonsContainer.addEventListener('click', (e) =>

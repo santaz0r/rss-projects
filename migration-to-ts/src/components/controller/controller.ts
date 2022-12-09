@@ -2,7 +2,7 @@ import { IResponseArticleObj, IResponseSourcesObj } from './../../types/index';
 import AppLoader from './appLoader';
 
 class AppController extends AppLoader {
-    getSources(callback: (data: IResponseSourcesObj) => void) {
+    getSources(callback: (data: IResponseSourcesObj) => void): void {
         super.getResp(
             {
                 endpoint: 'sources',
@@ -11,7 +11,7 @@ class AppController extends AppLoader {
         );
     }
 
-    getNews(e: Event, callback: (data: IResponseArticleObj) => void) {
+    getNews(e: Event, callback: (data: IResponseArticleObj) => void): void {
         let target = <HTMLSpanElement>e.target;
 
         const newsContainer = <HTMLDivElement>e.currentTarget;
