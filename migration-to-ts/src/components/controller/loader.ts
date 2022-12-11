@@ -17,7 +17,6 @@ class Loader {
     }
 
     private errorHandler(res: Response): Response {
-        console.log('resres', res);
         if (!res.ok) {
             if (res.status === Errors.unauthorized || res.status === Errors.notFound)
                 console.log(`Sorry, but there is ${res.status} error: ${res.statusText}`);
